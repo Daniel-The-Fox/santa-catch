@@ -1,0 +1,99 @@
+[gd_scene load_steps=18 format=3 uid="uid://dxp8fluee4v1t"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/player.gd" id="1_x7vt6"]
+[ext_resource type="AudioStream" uid="uid://vyv3qt0pnim7" path="res://assets/sfx/santa_catch_santa_confirmation_1.ogg" id="2_8ahk8"]
+[ext_resource type="Texture2D" uid="uid://pk0nuyoyjr5m" path="res://assets/gfx/santa_catch_santas.png" id="2_8qe84"]
+[ext_resource type="AudioStream" uid="uid://8rsdjn7sptog" path="res://assets/sfx/santa_catch_santa_confirmation_2.ogg" id="3_elpj3"]
+[ext_resource type="AudioStream" uid="uid://b1o5lwc8tusr8" path="res://assets/sfx/santa_catch_santa_confirmation_3.ogg" id="4_ag6td"]
+[ext_resource type="AudioStream" uid="uid://dg8j5aeuhwt4s" path="res://assets/sfx/santa_catch_santa_confirmation_4.ogg" id="5_g4u70"]
+[ext_resource type="AudioStream" uid="uid://dvlgfv5k760f7" path="res://assets/sfx/santa_catch_santa_confirmation_5.ogg" id="6_kwsgu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ds6rs"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(60, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrrl3"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(700, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxg3a"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(1340, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jqenn"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(1980, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgf11"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(2620, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hidd"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(3260, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_81dmt"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(3900, 40, 420, 560)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wh82d"]
+atlas = ExtResource("2_8qe84")
+region = Rect2(4540, 40, 420, 560)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uksc3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ds6rs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrrl3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxg3a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jqenn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgf11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hidd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_81dmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wh82d")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqa8k"]
+size = Vector2(416, 560)
+
+[node name="Player" type="Area2D" groups=["players"]]
+texture_filter = 1
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_x7vt6")
+catched_sfx_stream_1 = ExtResource("2_8ahk8")
+catched_sfx_stream_2 = ExtResource("3_elpj3")
+catched_sfx_stream_3 = ExtResource("4_ag6td")
+catched_sfx_stream_4 = ExtResource("5_g4u70")
+catched_sfx_stream_5 = ExtResource("6_kwsgu")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uksc3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_lqa8k")
+
+[node name="CatchedSFXPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

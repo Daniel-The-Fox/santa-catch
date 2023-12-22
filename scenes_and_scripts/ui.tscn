@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbqekc600j8lk"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/ui.gd" id="1_5vohd"]
+[ext_resource type="FontFile" uid="uid://u5sg0c0t15mo" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans-Bold.ttf" id="2_bj3mw"]
+[ext_resource type="Theme" uid="uid://bwmuq5dvfnnwg" path="res://themes/highscore.tres" id="3_4wlkv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_muvm7"]
+bg_color = Color(0.223529, 0.223529, 0.223529, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.811765, 0.152941, 0.188235, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsplv"]
+bg_color = Color(0.894118, 0.231373, 0.266667, 1)
+border_color = Color(0.811765, 0.152941, 0.188235, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+anti_aliasing = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ti7mj"]
+content_margin_left = 50.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.223529, 0.223529, 0.223529, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.811765, 0.152941, 0.188235, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+anti_aliasing = false
+
+[node name="UI" type="CanvasGroup"]
+texture_filter = 1
+script = ExtResource("1_5vohd")
+
+[node name="UIBox" type="HBoxContainer" parent="."]
+offset_right = 415.0
+offset_bottom = 60.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+metadata/_edit_group_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="UIBox"]
+custom_minimum_size = Vector2(400, 60)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("3_4wlkv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bj3mw")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/background = SubResource("StyleBoxFlat_muvm7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_xsplv")
+value = 100.0
+rounded = true
+
+[node name="TimeElapsedLabel" type="Label" parent="UIBox"]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_4wlkv")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("2_bj3mw")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_ti7mj")
+text = "12:34"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0

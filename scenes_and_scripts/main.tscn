@@ -1,0 +1,156 @@
+[gd_scene load_steps=25 format=3 uid="uid://beiypksvp8luy"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/main.gd" id="1_2yxqp"]
+[ext_resource type="PackedScene" uid="uid://dxp8fluee4v1t" path="res://scenes_and_scripts/player.tscn" id="2_ahfe4"]
+[ext_resource type="PackedScene" uid="uid://couptuly3fhrh" path="res://scenes_and_scripts/present.tscn" id="2_dnpe1"]
+[ext_resource type="AudioStream" uid="uid://cckljjg10x8ad" path="res://assets/sfx/santa_catch_bg_music_loop_1.ogg" id="2_nc7cf"]
+[ext_resource type="PackedScene" uid="uid://c0bdcy167avt4" path="res://scenes_and_scripts/sky.tscn" id="3_5w0x7"]
+[ext_resource type="AudioStream" uid="uid://cfq4hfhoffmbq" path="res://assets/sfx/santa_catch_bg_music_loop_2.ogg" id="3_ejbvi"]
+[ext_resource type="Texture2D" uid="uid://5k7yr4wuui2n" path="res://assets/gfx/santa_catch_christmas_tree_sprite.png" id="3_gujbh"]
+[ext_resource type="PackedScene" uid="uid://mfx17iyvt8wy" path="res://scenes_and_scripts/forest.tscn" id="3_tvfix"]
+[ext_resource type="PackedScene" uid="uid://chby7y3ghhncf" path="res://scenes_and_scripts/ground.tscn" id="4_7kvod"]
+[ext_resource type="PackedScene" uid="uid://bbqekc600j8lk" path="res://scenes_and_scripts/ui.tscn" id="4_nf5rb"]
+[ext_resource type="PackedScene" uid="uid://biyoq2ahymafu" path="res://scenes_and_scripts/houses.tscn" id="6_y05vc"]
+[ext_resource type="PackedScene" uid="uid://bh34qre172ss0" path="res://scenes_and_scripts/snow.tscn" id="12_ofqew"]
+[ext_resource type="PackedScene" uid="uid://ccxaubrcpiucy" path="res://scenes_and_scripts/highscore_screen.tscn" id="13_d5f4r"]
+[ext_resource type="AudioStream" uid="uid://be7e8hisaa4hp" path="res://assets/sfx/santa_catch_bing.ogg" id="13_uoj2a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cpxy"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(180, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkr7t"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(940, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r8l5"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(1700, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih1gi"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(2460, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgujf"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(3220, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f7d1"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(3980, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7f7xj"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(4740, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb1ib"]
+atlas = ExtResource("3_gujbh")
+region = Rect2(5500, 40, 400, 700)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yno5i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cpxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkr7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r8l5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih1gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgujf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f7d1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7f7xj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb1ib")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6gksl"]
+size = Vector2(1920, 20)
+
+[node name="Main" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_2yxqp")
+bg_music_stream_1 = ExtResource("2_nc7cf")
+bg_music_stream_2 = ExtResource("3_ejbvi")
+highscore_node = ExtResource("13_d5f4r")
+present_scene = ExtResource("2_dnpe1")
+
+[node name="GameStartTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="PresentSpawnTimer" type="Timer" parent="."]
+
+[node name="Background" type="CanvasGroup" parent="."]
+z_index = -1
+texture_filter = 1
+
+[node name="Sky" parent="Background" instance=ExtResource("3_5w0x7")]
+z_index = 1
+
+[node name="Ground" parent="Background" instance=ExtResource("4_7kvod")]
+z_index = 1
+
+[node name="Forest" parent="Background" instance=ExtResource("3_tvfix")]
+z_index = 1
+position = Vector2(0, -68)
+
+[node name="Houses" parent="Background" instance=ExtResource("6_y05vc")]
+
+[node name="ChristmasTree" type="AnimatedSprite2D" parent="Background"]
+z_index = 1
+position = Vector2(168, 770)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_yno5i")
+autoplay = "default"
+frame_progress = 0.212712
+
+[node name="CollisionBoundaries" type="CanvasGroup" parent="."]
+
+[node name="BottomArea2D" type="Area2D" parent="CollisionBoundaries" groups=["boundaries", "ground"]]
+input_pickable = false
+
+[node name="BottomCollisionShape" type="CollisionShape2D" parent="CollisionBoundaries/BottomArea2D"]
+position = Vector2(960, 1010)
+shape = SubResource("RectangleShape2D_6gksl")
+
+[node name="PlayerStartPosition" type="Marker2D" parent="."]
+position = Vector2(960, 924)
+gizmo_extents = 100.0
+
+[node name="PlayerEndPosition" type="Marker2D" parent="."]
+position = Vector2(392, 924)
+gizmo_extents = 100.0
+
+[node name="Player" parent="." instance=ExtResource("2_ahfe4")]
+position = Vector2(960, 924)
+scale = Vector2(0.3, 0.3)
+
+[node name="UI" parent="." instance=ExtResource("4_nf5rb")]
+position = Vector2(1295, 10)
+
+[node name="BGMusicPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="BingSfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_uoj2a")
+
+[node name="Snow" parent="." instance=ExtResource("12_ofqew")]
+visible = false
+
+[connection signal="timeout" from="GameStartTimer" to="." method="_on_game_start_timeout"]
+[connection signal="timeout" from="PresentSpawnTimer" to="." method="_on_present_spawn_timeout"]

@@ -1,0 +1,154 @@
+[gd_scene load_steps=8 format=3 uid="uid://cvjhjfgj8swck"]
+
+[ext_resource type="FontFile" uid="uid://bh68824gck8xe" path="res://assets/fonts/JollySweater_Font_1_0/TrueType (.ttf)/JollySweater-Bold.ttf" id="1_4iyhm"]
+[ext_resource type="PackedScene" uid="uid://couptuly3fhrh" path="res://scenes_and_scripts/present.tscn" id="2_s827l"]
+[ext_resource type="Shader" path="res://shaders/change_2_colors.gdshader" id="3_k5i7c"]
+
+[sub_resource type="Theme" id="Theme_jj4iw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e4gng"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("3_k5i7c")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.14, 0.36, 0.25, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.89, 0.23, 0.26, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lmjfc"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("3_k5i7c")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.14, 0.36, 0.25, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.89, 0.23, 0.26, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_no3c6"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("3_k5i7c")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.14, 0.36, 0.25, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.89, 0.23, 0.26, 1)
+
+[node name="MainTitle" type="Node2D"]
+texture_filter = 1
+position = Vector2(184, 96)
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -137.0
+offset_top = -35.0
+offset_right = 137.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_jj4iw")
+theme_override_colors/font_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4iyhm")
+theme_override_font_sizes/font_size = 72
+text = "Santa"
+uppercase = true
+
+[node name="Label2" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 108.0
+offset_top = 28.0
+offset_right = 468.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_jj4iw")
+theme_override_colors/font_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4iyhm")
+theme_override_font_sizes/font_size = 72
+text = "Catch"
+uppercase = true
+
+[node name="Present1" parent="." instance=ExtResource("2_s827l")]
+z_index = 0
+material = SubResource("ShaderMaterial_e4gng")
+position = Vector2(-142, -64)
+scale = Vector2(0.25, 0.25)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+random_colors = false
+paper_color_overwrite = Color(0.243137, 0.537255, 0.282353, 1)
+ribbon_color_overwrite = Color(1, 0, 0.266667, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present2" parent="." instance=ExtResource("2_s827l")]
+z_index = 0
+material = SubResource("ShaderMaterial_lmjfc")
+position = Vector2(195, -56)
+rotation = 0.788889
+scale = Vector2(0.25, 0.25)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+random_colors = false
+paper_color_overwrite = Color(0.0705882, 0.305882, 0.537255, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present3" parent="." instance=ExtResource("2_s827l")]
+z_index = 0
+material = SubResource("ShaderMaterial_no3c6")
+position = Vector2(435, 0)
+scale = Vector2(0.25, 0.25)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+random_colors = false
+paper_color_overwrite = Color(0.996078, 0.905882, 0.380392, 1)
+ribbon_color_overwrite = Color(0.709804, 0.313726, 0.533333, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false

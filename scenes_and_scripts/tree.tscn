@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://ck7abh41etx2"]
+
+[ext_resource type="Texture2D" uid="uid://dmmqmt2ygxleb" path="res://assets/gfx/santa_catch_trees.png" id="1_lwsmt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p3qh7"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(180, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3thni"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(940, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5o2ge"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(1700, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qp4h5"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(2460, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tdms"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(3220, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2q112"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(3980, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iwknb"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(4740, 100, 400, 640)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aiaux"]
+atlas = ExtResource("1_lwsmt")
+region = Rect2(5500, 100, 400, 640)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vy6nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p3qh7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3thni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5o2ge")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qp4h5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tdms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2q112")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iwknb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aiaux")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Tree" type="AnimatedSprite2D"]
+position = Vector2(600, 392)
+sprite_frames = SubResource("SpriteFrames_vy6nc")

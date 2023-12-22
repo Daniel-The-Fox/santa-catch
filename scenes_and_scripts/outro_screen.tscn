@@ -1,0 +1,270 @@
+[gd_scene load_steps=29 format=3 uid="uid://dt1hegy300klh"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/outro_screen.gd" id="1_ga1dm"]
+[ext_resource type="PackedScene" uid="uid://c0bdcy167avt4" path="res://scenes_and_scripts/sky.tscn" id="2_t28yn"]
+[ext_resource type="PackedScene" uid="uid://cvjhjfgj8swck" path="res://scenes_and_scripts/main_title.tscn" id="2_xu4qj"]
+[ext_resource type="AudioStream" uid="uid://83f52624j6ml" path="res://assets/sfx/santa_catch_sleigh_bells.ogg" id="3_abkng"]
+[ext_resource type="FontFile" uid="uid://u5sg0c0t15mo" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans-Bold.ttf" id="3_fjtco"]
+[ext_resource type="PackedScene" uid="uid://bh34qre172ss0" path="res://scenes_and_scripts/snow.tscn" id="3_rn1nn"]
+[ext_resource type="PackedScene" uid="uid://chby7y3ghhncf" path="res://scenes_and_scripts/ground.tscn" id="3_xs5pr"]
+[ext_resource type="PackedScene" uid="uid://mfx17iyvt8wy" path="res://scenes_and_scripts/forest.tscn" id="4_j7m3u"]
+[ext_resource type="PackedScene" uid="uid://biyoq2ahymafu" path="res://scenes_and_scripts/houses.tscn" id="5_avslc"]
+[ext_resource type="Texture2D" uid="uid://5k7yr4wuui2n" path="res://assets/gfx/santa_catch_christmas_tree_sprite.png" id="6_8y2bp"]
+[ext_resource type="AudioStream" uid="uid://0f4s6ptjsn4y" path="res://assets/voice-over/outro/ElevenLabs_2024-01-06T16_27_58_Daniel_pre_s42_sb75_m1.mp3" id="9_27nvo"]
+[ext_resource type="AudioStream" uid="uid://cwvnhbshysjny" path="res://assets/sfx/santa_catch_santa_merry_christmas.ogg" id="10_8546b"]
+[ext_resource type="PackedScene" uid="uid://dxp8fluee4v1t" path="res://scenes_and_scripts/player.tscn" id="11_7pog6"]
+[ext_resource type="Theme" uid="uid://bwmuq5dvfnnwg" path="res://themes/highscore.tres" id="11_q012g"]
+[ext_resource type="StyleBox" uid="uid://f1xqs0fuim5u" path="res://themes/highscore_screen.stylebox" id="12_sqgvj"]
+[ext_resource type="PackedScene" uid="uid://d218to7ilr8al" path="res://scenes_and_scripts/credits_screen.tscn" id="13_ccceu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cpxy"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(180, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkr7t"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(940, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r8l5"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(1700, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih1gi"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(2460, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgujf"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(3220, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f7d1"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(3980, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7f7xj"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(4740, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb1ib"]
+atlas = ExtResource("6_8y2bp")
+region = Rect2(5500, 40, 400, 700)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_n7xjj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cpxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkr7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r8l5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih1gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgujf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f7d1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7f7xj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb1ib")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="Animation" id="Animation_fq271"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ContinueLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4akuv"]
+resource_name = "blink_continue_text"
+length = 3.0
+loop_mode = 1
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ContinueLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e5m71"]
+_data = {
+"RESET": SubResource("Animation_fq271"),
+"blink_continue_text": SubResource("Animation_4akuv")
+}
+
+[node name="OutroScreen" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_ga1dm")
+
+[node name="Background" type="CanvasGroup" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(0, 234)
+
+[node name="Sky" parent="Background" instance=ExtResource("2_t28yn")]
+z_index = 1
+position = Vector2(0, -234)
+
+[node name="Ground" parent="Background" instance=ExtResource("3_xs5pr")]
+z_index = 1
+position = Vector2(2.08165e-12, -234)
+
+[node name="Forest" parent="Background" instance=ExtResource("4_j7m3u")]
+z_index = 1
+position = Vector2(0, -68)
+
+[node name="Houses" parent="Background" instance=ExtResource("5_avslc")]
+
+[node name="ChristmasTree" type="AnimatedSprite2D" parent="Background"]
+z_index = 1
+position = Vector2(160, 615.001)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_n7xjj")
+autoplay = "default"
+
+[node name="MainTitle" parent="." instance=ExtResource("2_xu4qj")]
+position = Vector2(814, 116)
+
+[node name="BGSFXPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_abkng")
+volume_db = -10.0
+
+[node name="OutroVoiceOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_27nvo")
+
+[node name="MerryChristmas" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_8546b")
+bus = &"Echo"
+
+[node name="Player" parent="." instance=ExtResource("11_7pog6")]
+position = Vector2(392, 1002)
+scale = Vector2(0.3, 0.3)
+collision_layer = 0
+collision_mask = 0
+input_pickable = false
+monitoring = false
+monitorable = false
+player_movable = false
+
+[node name="Snow" parent="." instance=ExtResource("3_rn1nn")]
+visible = false
+
+[node name="ContinueMessage" type="CanvasGroup" parent="."]
+
+[node name="OutroMessage" type="CanvasGroup" parent="."]
+position = Vector2(450, 352)
+metadata/_edit_group_ = true
+
+[node name="WhiteFrame" type="ColorRect" parent="OutroMessage"]
+offset_left = 17.0
+offset_top = -3.0
+offset_right = 1003.0
+offset_bottom = 291.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="DarkRedFrame" type="ColorRect" parent="OutroMessage"]
+offset_left = 18.0
+offset_top = -2.0
+offset_right = 1002.0
+offset_bottom = 290.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+color = Color(0.810547, 0.151978, 0.187049, 1)
+
+[node name="OutroMessagePanel" type="Panel" parent="OutroMessage"]
+offset_left = 20.0
+offset_right = 1000.0
+offset_bottom = 288.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("11_q012g")
+theme_override_styles/panel = ExtResource("12_sqgvj")
+
+[node name="OutroMessageLabel" type="Label" parent="OutroMessage/OutroMessagePanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme = ExtResource("11_q012g")
+theme_override_font_sizes/font_size = 36
+text = "Oh my! What a thrill this was!
+It was very close, but Santa managed to save Christmas after all! Splendid!
+
+Ho ho ho, Merry Christmas!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+justification_flags = 0
+
+[node name="ContinueLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 698.5
+offset_top = 992.0
+offset_right = 1227.5
+offset_bottom = 1034.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_fjtco")
+theme_override_font_sizes/font_size = 28
+text = "Press key to restart game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_e5m71")
+}
+autoplay = "RESET"
+
+[node name="CreditsScreen" parent="." instance=ExtResource("13_ccceu")]

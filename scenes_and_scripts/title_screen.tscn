@@ -1,0 +1,633 @@
+[gd_scene load_steps=40 format=3 uid="uid://rvt71qovmxxj"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/title_screen.gd" id="1_kkvah"]
+[ext_resource type="PackedScene" uid="uid://cvjhjfgj8swck" path="res://scenes_and_scripts/main_title.tscn" id="1_tm5q7"]
+[ext_resource type="PackedScene" uid="uid://c0bdcy167avt4" path="res://scenes_and_scripts/sky.tscn" id="2_36ic2"]
+[ext_resource type="AudioStream" uid="uid://83f52624j6ml" path="res://assets/sfx/santa_catch_sleigh_bells.ogg" id="3_3i4he"]
+[ext_resource type="FontFile" uid="uid://u5sg0c0t15mo" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans-Bold.ttf" id="3_4c0fo"]
+[ext_resource type="PackedScene" uid="uid://chby7y3ghhncf" path="res://scenes_and_scripts/ground.tscn" id="3_xu40k"]
+[ext_resource type="PackedScene" uid="uid://bh34qre172ss0" path="res://scenes_and_scripts/snow.tscn" id="4_brolm"]
+[ext_resource type="PackedScene" uid="uid://mfx17iyvt8wy" path="res://scenes_and_scripts/forest.tscn" id="4_rikfu"]
+[ext_resource type="PackedScene" uid="uid://biyoq2ahymafu" path="res://scenes_and_scripts/houses.tscn" id="5_4ur7f"]
+[ext_resource type="FontFile" uid="uid://ddqobpgo2ao78" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans.ttf" id="5_hvges"]
+[ext_resource type="PackedScene" uid="uid://d218to7ilr8al" path="res://scenes_and_scripts/credits_screen.tscn" id="5_i3otm"]
+[ext_resource type="Texture2D" uid="uid://5k7yr4wuui2n" path="res://assets/gfx/santa_catch_christmas_tree_sprite.png" id="6_67ubn"]
+[ext_resource type="Theme" uid="uid://bwmuq5dvfnnwg" path="res://themes/highscore.tres" id="8_aaiv5"]
+[ext_resource type="StyleBox" uid="uid://f1xqs0fuim5u" path="res://themes/highscore_screen.stylebox" id="9_6f0lw"]
+[ext_resource type="AudioStream" uid="uid://dnwv5dn7hlnrh" path="res://assets/voice-over/intro/ElevenLabs_2024-01-06T16_14_03_Daniel_pre_s42_sb75_m1.mp3" id="9_w8wuf"]
+[ext_resource type="Texture2D" uid="uid://dhm4xw1dlkku" path="res://assets/gfx/input_key_icons/tile_0169.png" id="15_wbh02"]
+[ext_resource type="Texture2D" uid="uid://cl0vb6wmh2whi" path="res://assets/gfx/input_key_icons/tile_0038.png" id="16_8ffka"]
+[ext_resource type="Texture2D" uid="uid://w3t2sq1iex0o" path="res://assets/gfx/input_key_icons/tile_0067.png" id="17_vljyr"]
+[ext_resource type="Texture2D" uid="uid://d0ehwn7j0csch" path="res://assets/gfx/input_key_icons/tile_0004.png" id="18_r6ie3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7cpxy"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(180, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkr7t"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(940, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4r8l5"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(1700, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ih1gi"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(2460, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vgujf"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(3220, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1f7d1"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(3980, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7f7xj"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(4740, 40, 400, 700)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gb1ib"]
+atlas = ExtResource("6_67ubn")
+region = Rect2(5500, 40, 400, 700)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h1olg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7cpxy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkr7t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4r8l5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ih1gi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vgujf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1f7d1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7f7xj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gb1ib")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="Animation" id="Animation_gbolf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IntroMessage:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_ysfdf"]
+resource_name = "fade_in"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("IntroMessage:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ysi76"]
+_data = {
+"RESET": SubResource("Animation_gbolf"),
+"fade_in": SubResource("Animation_ysfdf")
+}
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t5nki"]
+load_path = "res://.godot/imported/button UI.png-b70b06099ba5a0f324261c1467add6f3.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8nvae"]
+load_path = "res://.godot/imported/button UI.png-b70b06099ba5a0f324261c1467add6f3.ctex"
+
+[sub_resource type="Animation" id="Animation_pbc3s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_s7q62"]
+resource_name = "fade_in"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iouv1"]
+_data = {
+"RESET": SubResource("Animation_pbc3s"),
+"fade_in": SubResource("Animation_s7q62")
+}
+
+[sub_resource type="Animation" id="Animation_fq271"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ContinueLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_4akuv"]
+resource_name = "blink_continue_text"
+length = 3.0
+loop_mode = 1
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ContinueLabel:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5, 3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e5m71"]
+_data = {
+"RESET": SubResource("Animation_fq271"),
+"blink_continue_text": SubResource("Animation_4akuv")
+}
+
+[node name="TitleScreen" type="Node2D"]
+texture_filter = 1
+script = ExtResource("1_kkvah")
+
+[node name="Background" type="CanvasGroup" parent="."]
+z_index = -1
+texture_filter = 1
+position = Vector2(0, 234)
+
+[node name="Sky" parent="Background" instance=ExtResource("2_36ic2")]
+z_index = 1
+position = Vector2(0, -234)
+
+[node name="Ground" parent="Background" instance=ExtResource("3_xu40k")]
+z_index = 1
+position = Vector2(2.08165e-12, -234)
+
+[node name="Forest" parent="Background" instance=ExtResource("4_rikfu")]
+z_index = 1
+position = Vector2(0, -68)
+
+[node name="Houses" parent="Background" instance=ExtResource("5_4ur7f")]
+
+[node name="ChristmasTree" type="AnimatedSprite2D" parent="Background"]
+z_index = 1
+position = Vector2(160, 615.001)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_h1olg")
+autoplay = "default"
+
+[node name="MainTitle" parent="." instance=ExtResource("1_tm5q7")]
+position = Vector2(814, 116)
+
+[node name="BGSFXPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_3i4he")
+volume_db = -10.0
+
+[node name="IntroVoiceOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_w8wuf")
+
+[node name="VersionLabel" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 1048.0
+offset_right = 114.0
+offset_bottom = 1074.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0.329412, 0.329412, 0.329412, 1)
+theme_override_fonts/font = ExtResource("5_hvges")
+theme_override_font_sizes/font_size = 20
+text = "vx.xx.x.x"
+vertical_alignment = 1
+justification_flags = 0
+max_lines_visible = 1
+
+[node name="Snow" parent="." instance=ExtResource("4_brolm")]
+visible = false
+
+[node name="IntroMessage" type="CanvasGroup" parent="."]
+position = Vector2(352, 270)
+metadata/_edit_group_ = true
+
+[node name="WhiteFrame" type="ColorRect" parent="IntroMessage"]
+offset_left = -3.0
+offset_top = -3.0
+offset_right = 1219.0
+offset_bottom = 683.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="DarkRedFrame" type="ColorRect" parent="IntroMessage"]
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 1218.0
+offset_bottom = 682.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+color = Color(0.810547, 0.151978, 0.187049, 1)
+
+[node name="IntroMessagePanel" type="Panel" parent="IntroMessage"]
+offset_right = 1216.0
+offset_bottom = 680.0
+size_flags_vertical = 3
+mouse_filter = 2
+theme = ExtResource("8_aaiv5")
+theme_override_styles/panel = ExtResource("9_6f0lw")
+
+[node name="IntroMessageLabel" type="Label" parent="IntroMessage/IntroMessagePanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 576.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme = ExtResource("8_aaiv5")
+theme_override_font_sizes/font_size = 36
+text = "It’s the day before Christmas and there’s a problem at Santa’s factory:  The autonomous Christmas present wrapping machine is malfunctioning. 
+And now, there are Christmas presents falling from the sky all around Santa’s North Pole village! 
+While there is always a backup storage of Christmas presents, they aren't enough to ensure that everyone gets one. 
+
+So Santa has to somehow save Christmas by catching enough of the Christmas presents falling from the sky.
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+justification_flags = 0
+
+[node name="GameControlIcons" type="MarginContainer" parent="IntroMessage/IntroMessagePanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -88.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 50
+alignment = 1
+
+[node name="Left" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 15
+
+[node name="MoveLeftLabel" type="Label" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Left"]
+layout_mode = 2
+size_flags_vertical = 1
+text = "Move left:"
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="LeftIcons" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Left"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="LeftPC" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Left/LeftIcons"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("15_wbh02")
+stretch_mode = 4
+
+[node name="LeftGameController" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Left/LeftIcons"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("16_8ffka")
+stretch_mode = 4
+
+[node name="Right" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 15
+
+[node name="MoveRightLabel" type="Label" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Right"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Move right:"
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="RightIcons" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Right"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="RightPC" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Right/RightIcons"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("15_wbh02")
+stretch_mode = 4
+flip_h = true
+
+[node name="RightGameController" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Right/RightIcons"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("16_8ffka")
+stretch_mode = 4
+flip_h = true
+
+[node name="Confirm" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 15
+
+[node name="ConfirmLabel" type="Label" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Confirm"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Confirm:"
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="ConfirmIcons" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Confirm"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="ConfirmPC" type="HBoxContainer" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Confirm/ConfirmIcons"]
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+theme_override_constants/separation = 0
+
+[node name="ConfirmPC1" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Confirm/ConfirmIcons/ConfirmPC"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("17_vljyr")
+stretch_mode = 4
+flip_h = true
+
+[node name="ConfirmPC2" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Confirm/ConfirmIcons/ConfirmPC"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+texture = ExtResource("17_vljyr")
+stretch_mode = 4
+
+[node name="ConfirmGameController" type="TextureRect" parent="IntroMessage/IntroMessagePanel/GameControlIcons/HBoxContainer/Confirm/ConfirmIcons"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("18_r6ie3")
+stretch_mode = 4
+flip_h = true
+
+[node name="IntroMessageFadeAnim" type="AnimationPlayer" parent="IntroMessage"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_ysi76")
+}
+
+[node name="AudioEnableScreen" type="CanvasGroup" parent="."]
+visible = false
+position = Vector2(664, 406)
+metadata/_edit_group_ = true
+
+[node name="WhiteFrame" type="ColorRect" parent="AudioEnableScreen"]
+offset_left = -28.0
+offset_top = 77.0
+offset_right = 628.0
+offset_bottom = 383.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="DarkRedFrame" type="ColorRect" parent="AudioEnableScreen"]
+offset_left = -27.0
+offset_top = 78.0
+offset_right = 627.0
+offset_bottom = 382.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+color = Color(0.810547, 0.151978, 0.187049, 1)
+
+[node name="AudioEnablePanel" type="Panel" parent="AudioEnableScreen"]
+offset_left = -25.0
+offset_top = 80.0
+offset_right = 625.0
+offset_bottom = 380.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+theme = ExtResource("8_aaiv5")
+theme_override_styles/panel = ExtResource("9_6f0lw")
+
+[node name="AudioEnableMargin" type="MarginContainer" parent="AudioEnableScreen/AudioEnablePanel"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -318.0
+offset_top = -153.5
+offset_right = 318.0
+offset_bottom = 153.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="HBoxContainer" type="HBoxContainer" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin"]
+layout_mode = 2
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="EnableAudio" type="VBoxContainer" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="EnableAudioButton" type="TextureButton" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/EnableAudio"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/EnableAudio/EnableAudioButton"]
+texture_filter = 1
+position = Vector2(104, 72)
+scale = Vector2(10, 10)
+texture = SubResource("CompressedTexture2D_t5nki")
+region_enabled = true
+region_rect = Rect2(96, 160, 16, 16)
+
+[node name="EnableAudioLabel" type="Label" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/EnableAudio"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+mouse_filter = 1
+text = "Enable Audio"
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="MuteAudio" type="VBoxContainer" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="MuteAudioButton" type="TextureButton" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/MuteAudio"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/MuteAudio/MuteAudioButton"]
+texture_filter = 1
+position = Vector2(104, 72)
+scale = Vector2(10, 10)
+texture = SubResource("CompressedTexture2D_8nvae")
+region_enabled = true
+region_rect = Rect2(112, 160, 16, 16)
+
+[node name="MuteAudioLabel" type="Label" parent="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/MuteAudio"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+mouse_filter = 1
+text = "Mute Audio"
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="AudioEnableFadeAnim" type="AnimationPlayer" parent="AudioEnableScreen"]
+libraries = {
+"": SubResource("AnimationLibrary_iouv1")
+}
+
+[node name="ContinueLabel" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 698.5
+offset_top = 992.0
+offset_right = 1227.5
+offset_bottom = 1034.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+mouse_filter = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_4c0fo")
+theme_override_font_sizes/font_size = 28
+text = "Press key to start new game"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_e5m71")
+}
+autoplay = "RESET"
+
+[node name="CreditsScreen" parent="." instance=ExtResource("5_i3otm")]
+
+[connection signal="mouse_entered" from="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/EnableAudio/EnableAudioButton" to="." method="_on_enable_audio_button_mouse_entered"]
+[connection signal="mouse_exited" from="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/EnableAudio/EnableAudioButton" to="." method="_on_enable_audio_button_mouse_exited"]
+[connection signal="pressed" from="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/EnableAudio/EnableAudioButton" to="." method="_on_enable_audio_button_pressed"]
+[connection signal="mouse_entered" from="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/MuteAudio/MuteAudioButton" to="." method="_on_mute_audio_button_mouse_entered"]
+[connection signal="mouse_exited" from="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/MuteAudio/MuteAudioButton" to="." method="_on_mute_audio_button_mouse_exited"]
+[connection signal="pressed" from="AudioEnableScreen/AudioEnablePanel/AudioEnableMargin/HBoxContainer/MuteAudio/MuteAudioButton" to="." method="_on_mute_audio_button_pressed"]

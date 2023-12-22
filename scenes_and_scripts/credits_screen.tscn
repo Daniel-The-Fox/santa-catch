@@ -1,0 +1,371 @@
+[gd_scene load_steps=19 format=3 uid="uid://d218to7ilr8al"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/credits_screen.gd" id="1_nqvnk"]
+[ext_resource type="FontFile" uid="uid://ddqobpgo2ao78" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans.ttf" id="2_fye44"]
+[ext_resource type="FontFile" uid="uid://u5sg0c0t15mo" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans-Bold.ttf" id="3_2r4h2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5p7y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p7cs5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kgliy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5mhp0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p5bqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_corka"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l276j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bqs82"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bintc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0aslv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8bcet"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5alfy"]
+
+[sub_resource type="Animation" id="Animation_8o4ru"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_367g1"]
+resource_name = "fade_in"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lc3av"]
+_data = {
+"RESET": SubResource("Animation_8o4ru"),
+"fade_in": SubResource("Animation_367g1")
+}
+
+[node name="CreditsScreen" type="CanvasGroup"]
+texture_filter = 1
+script = ExtResource("1_nqvnk")
+
+[node name="CreditsButton" type="Button" parent="."]
+texture_filter = 1
+offset_left = 1768.0
+offset_top = 1036.0
+offset_right = 1902.0
+offset_bottom = 1080.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+theme_override_colors/font_color = Color(0.329412, 0.329412, 0.329412, 1)
+theme_override_colors/font_pressed_color = Color(0.329412, 0.329412, 0.329412, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.329412, 0.329412, 0.329412, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.329412, 0.329412, 0.329412, 1)
+theme_override_fonts/font = ExtResource("3_2r4h2")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_o5p7y")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_p7cs5")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_kgliy")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_5mhp0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_p5bqq")
+text = "CREDITS"
+
+[node name="Credits" type="CanvasGroup" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+texture_filter = 1
+position = Vector2(268, 128)
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Credits"]
+offset_top = 136.0
+offset_right = 1384.0
+offset_bottom = 920.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 1
+mouse_force_pass_scroll_events = false
+color = Color(0, 0, 0, 1)
+
+[node name="CreditsText" type="RichTextLabel" parent="Credits"]
+offset_left = 20.0
+offset_top = 152.0
+offset_right = 1364.0
+offset_bottom = 840.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+focus_mode = 2
+mouse_filter = 1
+theme_override_constants/line_separation = 3
+theme_override_fonts/normal_font = ExtResource("2_fye44")
+theme_override_fonts/bold_font = ExtResource("3_2r4h2")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 24
+theme_override_styles/focus = SubResource("StyleBoxEmpty_corka")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l276j")
+bbcode_enabled = true
+text = "
+[b]
+##############################
+# Santa Catch, 2024                           #
+# A game by Daniel the Fox                 #
+# [color=e43b44][url]https://danielthefox.itch.io[/url][/color]              #
+# [color=e43b44][url]https://github.com/Daniel-The-Fox[/url][/color]   #
+##############################
+[/b]
+
+
+[b]Resources used to create this game[/b]
+
+The Godot Engine, Version 4.2.1:
+[color=e43b44][url]https://godotengine.org/[/url][/color]
+[color=e43b44][url]https://godotengine.org/license/[/url][/color]
+
+The pixel art for this game is inspired by the great pixel art tutorial videos by Pxel_art_ids:
+[color=e43b44][url]https://www.youtube.com/@Pxel_art_ids[/url][/color]
+
+I created all the pixel art for this game, including animations, in the perfectly-suited pixel art drawing App called Pixaki:
+[color=e43b44][url]https://pixaki.com[/url][/color]
+
+For image manipulation on my desktop computer, I used the #1 Open Source image editing app Gimp:
+[color=e43b44][url]https://www.gimp.org[/url][/color]
+
+All sound effects and music are from freesound.org:
+[color=e43b44][url]https://freesound.org/[/url][/color]
+
+The color shader used to dynamically change the color combination of the Christmas presents
+is based on the very clean code from AThousandShips at
+[color=e43b44][url]https://github.com/godotengine/godot-proposals/issues/6870#issuecomment-1873460946[/url][/color]
+and the very useful tutorial video by Yep at
+[color=e43b44][url]https://www.youtube.com/watch?v=4qzi5fEJs4s[/url][/color]
+
+The snow shader is created by Steampunkdemon and can be found at:
+[color=e43b44][url]https://steampunkdemon.itch.io/rain-and-snow-shader-with-parallax-effect-for-godot[/url][/color]
+or
+[color=e43b44][url]https://godotshaders.com/shader/rain-and-snow-with-parallax-scrolling-effect/[/url][/color]
+
+The random player name generator is inspired by the random container names in Docker:
+[color=e43b44][url]https://github.com/moby/moby/blob/master/pkg/namesgenerator/names-generator.go[/url][/color]
+
+The online highscore is powered by the great SilentWolf backend services for Godot Engine:
+[color=e43b44][url]https://www.silentwolf.com[/url][/color]
+
+The fade effect when switching scenes is based on the very useful and entertaining tutorial video by Game Endeavor:
+[color=e43b44][url]https://www.youtube.com/watch?v=_4_DVbZwmYc[/url][/color]
+
+Main headlines are using the font Jolly Sweater by GGBotNet:
+[color=e43b44][url]https://ggbot.itch.io/jolly-sweater-font[/url][/color]
+
+Normal text is displayed using the font Pixeloid by GGBotNet:
+[color=e43b44][url]https://ggbot.itch.io/pixeloid-font[/url][/color]
+
+The game control icons are from kenney.nl:
+[color=e43b44][url]https://kenney.nl[/url][/color]
+
+The ultra-realistic voice-overs for the intro & outro scenes
+are AI-generated text-to-speech from Elevenlabs' free AI Voice online service:
+[color=e43b44][url]https://elevenlabs.io/?from=partnerpalmer5730[/url][/color] (Affiliate link)
+
+The audio icons shown to web browser players in the title screen are from Kicked-in-Teeth:
+[color=e43b44][url]https://kicked-in-teeth.itch.io/button-ui[/url][/color]
+
+------------------------------------------------
+
+This game uses Godot Engine, available under the following license:
+
+Copyright (c) 2014-present Godot Engine contributors. Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \\\"Software\\\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+------------------------------------------------
+
+Godot uses FreeType to render fonts. Its license requires attribution, so the following text must be included together with the Godot license:
+
+Portions of this software are copyright © 1996-2023 The FreeType Project (www.freetype.org). All rights reserved.
+
+------------------------------------------------
+
+Godot includes the ENet library to handle high-level multiplayer. ENet has similar licensing terms as Godot:
+
+Copyright (c) 2002-2020 Lee Salzman
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \\\"Software\\\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \\\"AS IS\\\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+------------------------------------------------
+
+If the project is exported with Godot 3.1 or later, it includes mbed TLS. The Apache license needs to be complied to by including the following text:
+
+Copyright The Mbed TLS Contributors
+
+Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+[color=e43b44][url]http://www.apache.org/licenses/LICENSE-2.0[/url][/color]
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+------------------------------------------------
+
+The Jolly Sweater and Pixeloid Font Software are licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+[color=e43b44][url]https://openfontlicense.org[/url][/color]
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded,
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+\"Font Software\" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+\"Reserved Font Name\" refers to any names specified as such after the
+copyright statement(s).
+
+\"Original Version\" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+\"Modified Version\" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+\"Author\" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+
+------------------------------------------------
+
+"
+autowrap_mode = 2
+selection_enabled = true
+
+[node name="BackButton" type="Button" parent="Credits"]
+texture_filter = 1
+offset_left = 656.0
+offset_top = 862.0
+offset_right = 737.0
+offset_bottom = 904.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+mouse_filter = 1
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_hover_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_focus_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_fonts/font = ExtResource("2_fye44")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_bqs82")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_bintc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_0aslv")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8bcet")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5alfy")
+text = "CLOSE"
+
+[node name="CreditsFadeIn" type="AnimationPlayer" parent="Credits"]
+libraries = {
+"": SubResource("AnimationLibrary_lc3av")
+}
+
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]
+[connection signal="meta_clicked" from="Credits/CreditsText" to="." method="_on_credits_text_meta_clicked"]
+[connection signal="pressed" from="Credits/BackButton" to="." method="_on_back_button_pressed"]

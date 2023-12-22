@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bh34qre172ss0"]
+
+[ext_resource type="Shader" path="res://shaders/rain_snow.gdshader" id="1_i3g13"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lnkaq"]
+shader = ExtResource("1_i3g13")
+shader_parameter/rain_amount = 100.0
+shader_parameter/near_rain_length = 0.02
+shader_parameter/far_rain_length = 0.01
+shader_parameter/near_rain_width = 0.75
+shader_parameter/far_rain_width = 0.5
+shader_parameter/near_rain_transparency = 1.0
+shader_parameter/far_rain_transparency = 0.75
+shader_parameter/rain_color = Color(1, 1, 1, 1)
+shader_parameter/base_rain_speed = 0.1
+shader_parameter/additional_rain_speed = 0.1
+shader_parameter/slant = -0.2
+
+[node name="Snow" type="ColorRect"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_lnkaq")
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(1, 1, 1, 0)

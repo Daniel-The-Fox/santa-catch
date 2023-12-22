@@ -1,0 +1,254 @@
+[gd_scene load_steps=36 format=3 uid="uid://couptuly3fhrh"]
+
+[ext_resource type="Shader" path="res://shaders/change_2_colors.gdshader" id="1_amo8u"]
+[ext_resource type="Script" path="res://scenes_and_scripts/present.gd" id="1_is0o5"]
+[ext_resource type="AudioStream" uid="uid://dwopghu74rtc6" path="res://assets/sfx/santa_catch_present_crash_1.ogg" id="3_m402o"]
+[ext_resource type="Texture2D" uid="uid://bhwxnnt7nwn6v" path="res://assets/gfx/santa_catch_present_crash_sprite_2_blank.png" id="3_t21ln"]
+[ext_resource type="AudioStream" uid="uid://dtm0jfsj5cql3" path="res://assets/sfx/santa_catch_present_crash_2.ogg" id="4_6yred"]
+[ext_resource type="Texture2D" uid="uid://b8bvilg131m80" path="res://assets/gfx/santa_catch_present_crash_sprite_1_blank.png" id="4_nqskr"]
+[ext_resource type="Texture2D" uid="uid://n7bnda5gikvx" path="res://assets/gfx/santa_catch_present_blank.png" id="5_j62ke"]
+[ext_resource type="AudioStream" uid="uid://5tq4kugbph2w" path="res://assets/sfx/santa_catch_present_crash_3.ogg" id="5_kxw6p"]
+[ext_resource type="AudioStream" uid="uid://c23dt58q62ilq" path="res://assets/sfx/santa_catch_present_crash_4.ogg" id="6_buia2"]
+[ext_resource type="AudioStream" uid="uid://br24vhcr4tvqc" path="res://assets/sfx/santa_catch_present_crash_5.ogg" id="7_b243h"]
+[ext_resource type="AudioStream" uid="uid://styypivn3o32" path="res://assets/sfx/santa_catch_present_crash_6.ogg" id="8_ei88x"]
+[ext_resource type="AudioStream" uid="uid://ce47smo4wj02y" path="res://assets/sfx/santa_catch_present_crash_7.ogg" id="9_ox66c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_joeol"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("1_amo8u")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.14, 0.36, 0.25, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.89, 0.23, 0.26, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ayloo"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(0, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ttwt"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(480, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s566v"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(960, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uedqf"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(1440, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hm868"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(1920, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hacrc"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(2400, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qst5"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(2880, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1exr"]
+atlas = ExtResource("3_t21ln")
+region = Rect2(3360, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_il3sc"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(0, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hya8m"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(480, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1qrhu"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(960, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s002k"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(1440, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tk1jx"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(1920, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x14ql"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(2400, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c5plu"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(2880, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_163t5"]
+atlas = ExtResource("4_nqskr")
+region = Rect2(3360, 0, 480, 480)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jduek"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ayloo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ttwt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s566v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uedqf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hm868")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hacrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qst5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1exr")
+}],
+"loop": false,
+"name": &"crash_fast",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_il3sc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hya8m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1qrhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s002k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tk1jx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x14ql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c5plu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_163t5")
+}],
+"loop": false,
+"name": &"crash_slow",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_j62ke")
+}],
+"loop": false,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cs87y"]
+size = Vector2(208, 224)
+
+[sub_resource type="Animation" id="Animation_cdarp"]
+resource_name = "falling_fast"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_kt6hm"]
+resource_name = "falling_medium"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_emrph"]
+resource_name = "falling_slow"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.28319]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_p6pur"]
+_data = {
+"falling_fast": SubResource("Animation_cdarp"),
+"falling_medium": SubResource("Animation_kt6hm"),
+"falling_slow": SubResource("Animation_emrph")
+}
+
+[node name="Present" type="Area2D" groups=["presents"]]
+z_index = 1
+texture_filter = 1
+material = SubResource("ShaderMaterial_joeol")
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_is0o5")
+crash_sfx_stream_1 = ExtResource("3_m402o")
+crash_sfx_stream_2 = ExtResource("4_6yred")
+crash_sfx_stream_3 = ExtResource("5_kxw6p")
+crash_sfx_stream_4 = ExtResource("6_buia2")
+crash_sfx_stream_5 = ExtResource("7_b243h")
+crash_sfx_stream_6 = ExtResource("8_ei88x")
+crash_sfx_stream_7 = ExtResource("9_ox66c")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+use_parent_material = true
+position = Vector2(0, 1.54972e-06)
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_jduek")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_cs87y")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_p6pur")
+}
+
+[node name="CrashSFXPlayer" type="AudioStreamPlayer" parent="."]
+volume_db = -10.0
+
+[node name="CatchedSFXPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

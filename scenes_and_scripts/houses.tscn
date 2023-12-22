@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://biyoq2ahymafu"]
+
+[ext_resource type="PackedScene" uid="uid://2em6iw10qbws" path="res://scenes_and_scripts/house.tscn" id="1_yi5pc"]
+
+[node name="Houses" type="CanvasGroup"]
+
+[node name="House10" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(608, 440)
+scale = Vector2(0.26, 0.26)
+
+[node name="House9" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(1280, 408)
+scale = Vector2(0.27, 0.27)
+
+[node name="House4" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(216, 448)
+scale = Vector2(0.3, 0.3)
+
+[node name="House5" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(1824, 464)
+scale = Vector2(0.3, 0.3)
+
+[node name="House" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(1040, 472)
+scale = Vector2(0.38, 0.38)
+
+[node name="House3" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(464, 496)
+scale = Vector2(0.37, 0.37)
+
+[node name="House2" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(752, 536)
+scale = Vector2(0.41, 0.41)
+
+[node name="House7" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(1504, 480)
+scale = Vector2(0.33, 0.33)
+
+[node name="House6" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(1280, 536)
+scale = Vector2(0.35, 0.35)
+
+[node name="House8" parent="." instance=ExtResource("1_yi5pc")]
+z_index = 1
+position = Vector2(1664, 544)
+scale = Vector2(0.4, 0.4)

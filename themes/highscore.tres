@@ -1,0 +1,10 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bwmuq5dvfnnwg"]
+
+[ext_resource type="FontFile" uid="uid://ddqobpgo2ao78" path="res://assets/fonts/Pixeloid_Font_0_5/TrueType (.ttf)/PixeloidSans.ttf" id="1_o12ic"]
+
+[resource]
+default_font = ExtResource("1_o12ic")
+Label/colors/font_color = Color(0.866667, 0.866667, 0.866667, 1)
+Label/font_sizes/font_size = 34
+Label/fonts/font = ExtResource("1_o12ic")
+Label/styles/normal = null

@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://chby7y3ghhncf"]
+
+[node name="Ground" type="CanvasGroup"]
+
+[node name="GroundRect" type="ColorRect" parent="."]
+offset_top = 376.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.976471, 0.980392, 0.941176, 1)

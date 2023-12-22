@@ -1,0 +1,1183 @@
+[gd_scene load_steps=30 format=3 uid="uid://ccxaubrcpiucy"]
+
+[ext_resource type="Script" path="res://scenes_and_scripts/highscore_screen.gd" id="1_kxvlh"]
+[ext_resource type="FontFile" uid="uid://bh68824gck8xe" path="res://assets/fonts/JollySweater_Font_1_0/TrueType (.ttf)/JollySweater-Bold.ttf" id="2_4novy"]
+[ext_resource type="StyleBox" uid="uid://f1xqs0fuim5u" path="res://themes/highscore_screen.stylebox" id="3_mt7xv"]
+[ext_resource type="PackedScene" uid="uid://couptuly3fhrh" path="res://scenes_and_scripts/present.tscn" id="3_uh6fv"]
+[ext_resource type="Theme" uid="uid://bwmuq5dvfnnwg" path="res://themes/highscore.tres" id="4_528mb"]
+[ext_resource type="Shader" path="res://shaders/change_2_colors.gdshader" id="4_jxjyx"]
+[ext_resource type="Texture2D" uid="uid://dws7mjuw0mv1" path="res://assets/gfx/regenerate_btn.png" id="8_sh86x"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rq46w"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3peb0"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yna7n"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ittr"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nclyl"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_omref"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_03gsd"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ntgqr"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1xjki"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q6gqj"]
+resource_local_to_scene = true
+resource_name = "Change2Colors"
+shader = ExtResource("4_jxjyx")
+shader_parameter/color_1_old = Color(0, 1, 0, 1)
+shader_parameter/color_1_new = Color(0.45098, 0.0784314, 0.611765, 1)
+shader_parameter/color_2_old = Color(1, 0, 0, 1)
+shader_parameter/color_2_new = Color(0.988235, 0.901961, 0.568627, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d023d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_llsnf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lvs24"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yjxe0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c5j86"]
+
+[sub_resource type="Animation" id="Animation_ew8ba"]
+resource_name = "RESET"
+length = 0.001
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Highscore:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox:z_index")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Highscore/HighscorePanel/ContinueButton:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_v2dpg"]
+resource_name = "all_visible"
+length = 0.001
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Highscore:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Highscore/HighscorePanel/ContinueButton:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox:z_index")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_d0ss3"]
+resource_name = "fade_in"
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Highscore:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Highscore/HighscorePanel/ContinueButton:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox:z_index")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [-1, 0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e1jmh"]
+_data = {
+"RESET": SubResource("Animation_ew8ba"),
+"all_visible": SubResource("Animation_v2dpg"),
+"fade_in": SubResource("Animation_d0ss3")
+}
+
+[sub_resource type="Animation" id="Animation_qktgw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingPanel/LoadingIcon:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_gtxj5"]
+resource_name = "spin_loading_icon"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("LoadingPanel/LoadingIcon:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.523599, 1.0472, 1.5708, 2.0944, 2.61799, 3.14159, 3.66519, 4.18879, 4.71239, 5.23599, 5.75959, 6.28319]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m8udk"]
+_data = {
+"RESET": SubResource("Animation_qktgw"),
+"spin_loading_icon": SubResource("Animation_gtxj5")
+}
+
+[node name="HighscoreScreen" type="CanvasGroup"]
+texture_filter = 1
+position = Vector2(308, 128)
+script = ExtResource("1_kxvlh")
+
+[node name="Highscore" type="CanvasGroup" parent="."]
+z_index = 1
+
+[node name="WhiteFrame" type="ColorRect" parent="Highscore"]
+offset_left = 262.0
+offset_top = 58.0
+offset_right = 1058.0
+offset_bottom = 902.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="DarkRedFrame" type="ColorRect" parent="Highscore"]
+offset_left = 263.0
+offset_top = 59.0
+offset_right = 1057.0
+offset_bottom = 901.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+color = Color(0.811765, 0.152941, 0.188235, 1)
+
+[node name="HighscorePanel" type="Panel" parent="Highscore"]
+texture_filter = 1
+offset_left = 268.0
+offset_top = 64.0
+offset_right = 1052.0
+offset_bottom = 896.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("4_528mb")
+theme_override_styles/panel = ExtResource("3_mt7xv")
+metadata/_edit_group_ = true
+
+[node name="HighScoreTitleLabel" type="Label" parent="Highscore/HighscorePanel"]
+texture_filter = 1
+layout_mode = 2
+offset_left = 176.0
+offset_top = 40.0
+offset_right = 608.0
+offset_bottom = 88.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 1
+theme_override_constants/shadow_outline_size = 1
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("2_4novy")
+theme_override_font_sizes/font_size = 48
+text = "Highscore"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+uppercase = true
+
+[node name="BoxContainer" type="BoxContainer" parent="Highscore/HighscorePanel"]
+texture_filter = 1
+clip_contents = true
+layout_mode = 2
+offset_top = 144.0
+offset_right = 784.0
+offset_bottom = 744.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HighscoreHBox" type="HBoxContainer" parent="Highscore/HighscorePanel/BoxContainer"]
+texture_filter = 1
+clip_contents = true
+layout_mode = 2
+theme = ExtResource("4_528mb")
+theme_override_constants/separation = 27
+
+[node name="IconsVBox" type="VBoxContainer" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox"]
+texture_filter = 1
+clip_contents = true
+custom_minimum_size = Vector2(55, 2.08165e-12)
+layout_mode = 2
+auto_translate = false
+localize_numeral_system = false
+theme_override_constants/separation = 17
+
+[node name="Present1" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_rq46w")
+position = Vector2(28, 21)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(1, 0, 0.266667, 1)
+ribbon_color_overwrite = Color(0.243137, 0.537255, 0.282353, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present2" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_3peb0")
+position = Vector2(28, 80)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.0705882, 0.305882, 0.537255, 1)
+ribbon_color_overwrite = Color(0.894118, 0.231373, 0.266667, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present3" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_yna7n")
+position = Vector2(28, 139)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(1, 1, 1, 1)
+ribbon_color_overwrite = Color(0.894118, 0.231373, 0.266667, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present4" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_2ittr")
+position = Vector2(28, 198)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.407843, 0.219608, 0.423529, 1)
+ribbon_color_overwrite = Color(1, 1, 1, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present5" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_nclyl")
+position = Vector2(28, 257)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.0705882, 0.305882, 0.537255, 1)
+ribbon_color_overwrite = Color(0.996078, 0.905882, 0.380392, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present6" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_omref")
+position = Vector2(28, 317)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.709804, 0.313726, 0.533333, 1)
+ribbon_color_overwrite = Color(0.996078, 0.905882, 0.380392, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present7" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_03gsd")
+position = Vector2(28, 375)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.721569, 0.435294, 0.313726, 1)
+ribbon_color_overwrite = Color(0.388235, 0.780392, 0.301961, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present8" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_ntgqr")
+position = Vector2(28, 435)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.14902, 0.360784, 0.258824, 1)
+ribbon_color_overwrite = Color(0.894118, 0.231373, 0.266667, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present9" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_1xjki")
+position = Vector2(28, 492)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0, 0.6, 0.858824, 1)
+ribbon_color_overwrite = Color(0.894118, 0.231373, 0.266667, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="Present10" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/IconsVBox" instance=ExtResource("3_uh6fv")]
+material = SubResource("ShaderMaterial_q6gqj")
+position = Vector2(28, 553)
+scale = Vector2(0.17, 0.17)
+collision_layer = 0
+collision_mask = 0
+monitoring = false
+monitorable = false
+random_colors = false
+paper_color_overwrite = Color(0.917647, 0.831373, 0.666667, 1)
+ribbon_color_overwrite = Color(0.968627, 0.462745, 0.133333, 1)
+crash_sfx_stream_1 = null
+crash_sfx_stream_2 = null
+crash_sfx_stream_3 = null
+crash_sfx_stream_4 = null
+crash_sfx_stream_5 = null
+crash_sfx_stream_6 = null
+crash_sfx_stream_7 = null
+falling_automatically = false
+
+[node name="PositionVBox" type="VBoxContainer" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox"]
+texture_filter = 1
+clip_contents = true
+custom_minimum_size = Vector2(55, 2.08165e-12)
+layout_mode = 2
+theme_override_constants/separation = 17
+
+[node name="Position1" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "01"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position2" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "02"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position3" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "03"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position4" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "04"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position5" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "05"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position6" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "06"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position7" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "07"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position8" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "08"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position9" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "09"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Position10" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PositionVBox"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "10"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="PlayerNameVBox" type="VBoxContainer" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox"]
+clip_contents = true
+custom_minimum_size = Vector2(430, 2.08165e-12)
+layout_mode = 2
+theme_override_constants/separation = 17
+
+[node name="Name1" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "LongPlayerName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name2" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "Name"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name3" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "ABitLonger"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name4" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "AReaaallyLongName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name5" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "ShortName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name6" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "AReallyMuchTooLongPlayerName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name7" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "Shorty"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name8" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "ShortName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name9" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "ShortName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="Name10" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/PlayerNameVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "ShortName"
+vertical_alignment = 1
+justification_flags = 0
+clip_text = true
+max_lines_visible = 1
+
+[node name="ScoreVBox" type="VBoxContainer" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox"]
+clip_contents = true
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+theme_override_constants/separation = 17
+
+[node name="Score1" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "00:23"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score2" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "01:56"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score3" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "02:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score4" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "05:12"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score5" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "06:23"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score6" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "07:57"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score7" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "08:32"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score8" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "09:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score9" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "09:34"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="Score10" type="Label" parent="Highscore/HighscorePanel/BoxContainer/HighscoreHBox/ScoreVBox"]
+texture_filter = 1
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("4_528mb")
+theme_override_constants/line_spacing = 0
+text = "10:00"
+horizontal_alignment = 2
+vertical_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="ContinueButton" type="Button" parent="Highscore/HighscorePanel"]
+visible = false
+texture_filter = 1
+layout_mode = 2
+offset_left = 327.0
+offset_top = 778.0
+offset_right = 456.0
+offset_bottom = 808.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_filter = 1
+theme = ExtResource("4_528mb")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_hover_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_focus_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d023d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_llsnf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lvs24")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yjxe0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c5j86")
+text = "CONTINUE"
+alignment = 0
+
+[node name="HighscoreFadeAnim" type="AnimationPlayer" parent="Highscore"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_e1jmh")
+}
+
+[node name="PlayerNameInput" type="CanvasGroup" parent="."]
+visible = false
+z_index = 1
+position = Vector2(20, 18)
+metadata/_edit_group_ = true
+
+[node name="WhiteFrame" type="ColorRect" parent="PlayerNameInput"]
+offset_left = 402.0
+offset_top = 357.0
+offset_right = 904.0
+offset_bottom = 539.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="DarkRedFrame" type="ColorRect" parent="PlayerNameInput"]
+offset_left = 403.0
+offset_top = 358.0
+offset_right = 903.0
+offset_bottom = 538.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+color = Color(0.810547, 0.151978, 0.187049, 1)
+
+[node name="PlayerNameInputPanel" type="Panel" parent="PlayerNameInput"]
+texture_filter = 1
+clip_contents = true
+offset_left = 405.0
+offset_top = 360.0
+offset_right = 901.0
+offset_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 1
+theme = ExtResource("4_528mb")
+theme_override_styles/panel = ExtResource("3_mt7xv")
+metadata/_edit_group_ = true
+
+[node name="CanvasGroup" type="CanvasGroup" parent="PlayerNameInput/PlayerNameInputPanel"]
+z_index = 1
+texture_filter = 1
+
+[node name="Headline" type="Label" parent="PlayerNameInput/PlayerNameInputPanel/CanvasGroup"]
+texture_filter = 1
+offset_left = 15.0
+offset_top = 11.0
+offset_right = 489.0
+offset_bottom = 58.0
+theme = ExtResource("4_528mb")
+theme_override_colors/font_color = Color(0.894118, 0.231373, 0.266667, 1)
+text = "Generate Player Name"
+vertical_alignment = 1
+justification_flags = 0
+
+[node name="PlayerNameInputField" type="LineEdit" parent="PlayerNameInput/PlayerNameInputPanel/CanvasGroup"]
+texture_filter = 1
+offset_left = 15.0
+offset_top = 76.0
+offset_right = 431.0
+offset_bottom = 119.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme = ExtResource("4_528mb")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
+theme_override_colors/font_placeholder_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 28
+placeholder_text = "RandomPlayer"
+editable = false
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+
+[node name="RegenerateButton" type="TextureButton" parent="PlayerNameInput/PlayerNameInputPanel/CanvasGroup"]
+self_modulate = Color(0.878431, 0.0941176, 0.0941176, 1)
+texture_filter = 1
+offset_left = 443.0
+offset_top = 77.0
+offset_right = 459.0
+offset_bottom = 93.0
+scale = Vector2(2.5, 2.5)
+mouse_filter = 1
+texture_normal = ExtResource("8_sh86x")
+
+[node name="SaveButton" type="Button" parent="PlayerNameInput/PlayerNameInputPanel/CanvasGroup"]
+texture_filter = 1
+offset_left = 220.0
+offset_top = 136.0
+offset_right = 277.0
+offset_bottom = 170.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_filter = 1
+theme = ExtResource("4_528mb")
+theme_override_colors/font_color = Color(0.894118, 0.231373, 0.266667, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d023d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_llsnf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_lvs24")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_yjxe0")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c5j86")
+text = "SAVE"
+
+[node name="Loading" type="CanvasGroup" parent="."]
+visible = false
+z_index = 10
+position = Vector2(411, 312)
+metadata/_edit_group_ = true
+
+[node name="WhiteFrame" type="ColorRect" parent="Loading"]
+offset_left = 101.0
+offset_top = 119.0
+offset_right = 385.0
+offset_bottom = 198.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+
+[node name="DarkRedFrame" type="ColorRect" parent="Loading"]
+offset_left = 102.0
+offset_top = 120.0
+offset_right = 384.0
+offset_bottom = 197.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_translate = false
+localize_numeral_system = false
+mouse_filter = 2
+mouse_force_pass_scroll_events = false
+color = Color(0.810547, 0.151978, 0.187049, 1)
+
+[node name="LoadingPanel" type="Panel" parent="Loading"]
+offset_left = 104.0
+offset_top = 122.0
+offset_right = 384.0
+offset_bottom = 197.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("4_528mb")
+theme_override_styles/panel = ExtResource("3_mt7xv")
+
+[node name="LoadingIconAnimation" type="AnimationPlayer" parent="Loading/LoadingPanel"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_m8udk")
+}
+autoplay = "spin_loading_icon"
+
+[node name="LoadingIcon" type="Sprite2D" parent="Loading/LoadingPanel"]
+self_modulate = Color(0.878431, 0.0941176, 0.0941176, 1)
+position = Vector2(34, 38)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("8_sh86x")
+
+[node name="LoadingLabel" type="Label" parent="Loading/LoadingPanel"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 74.0
+offset_top = 16.0
+offset_right = 262.0
+offset_bottom = 60.0
+size_flags_horizontal = 4
+theme = ExtResource("4_528mb")
+theme_override_font_sizes/font_size = 36
+text = "Loading..."
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 0
+uppercase = true
+
+[connection signal="pressed" from="Highscore/HighscorePanel/ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="PlayerNameInput/PlayerNameInputPanel/CanvasGroup/RegenerateButton" to="." method="_on_regenerate_name_pressed"]
+[connection signal="pressed" from="PlayerNameInput/PlayerNameInputPanel/CanvasGroup/SaveButton" to="." method="_on_save_button_pressed"]

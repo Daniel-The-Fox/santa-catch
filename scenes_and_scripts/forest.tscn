@@ -1,0 +1,403 @@
+[gd_scene load_steps=2 format=3 uid="uid://mfx17iyvt8wy"]
+
+[ext_resource type="PackedScene" uid="uid://ck7abh41etx2" path="res://scenes_and_scripts/tree.tscn" id="1_uaysb"]
+
+[node name="Forest" type="Node2D"]
+
+[node name="BackgroundTrees2" type="CanvasGroup" parent="."]
+
+[node name="Tree" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(8, 256)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree2" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(104, 231)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree3" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(200, 272)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree4" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(296, 248)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree5" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(392, 280)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree6" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(488, 248)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree7" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(600, 264)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree8" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(696, 240)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree9" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(792, 272)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree10" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(888, 288)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree11" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(984, 232)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree12" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1080, 280)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree13" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1176, 240)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree14" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1272, 256)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree15" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1368, 272)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree16" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1464, 240)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree17" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1560, 288)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree18" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1656, 208)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree19" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1768, 280)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree20" parent="BackgroundTrees2" instance=ExtResource("1_uaysb")]
+position = Vector2(1864, 240)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="BackgroundTrees3" type="CanvasGroup" parent="."]
+
+[node name="Tree" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(40, 360)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree2" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(136, 335)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree3" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(232, 376)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree4" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(328, 352)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree5" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(424, 384)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree6" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(520, 352)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree7" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(632, 368)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree8" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(728, 344)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree9" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(824, 376)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree10" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(920, 392)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree11" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1016, 336)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree12" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1112, 384)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree13" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1208, 344)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree14" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1304, 360)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree15" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1400, 376)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree16" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1496, 344)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree17" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1592, 392)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree18" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1688, 312)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree19" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1800, 384)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree20" parent="BackgroundTrees3" instance=ExtResource("1_uaysb")]
+position = Vector2(1896, 344)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="BackgroundTrees4" type="CanvasGroup" parent="."]
+
+[node name="Tree" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(16, 448)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree2" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(112, 423)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree3" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(208, 464)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree4" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(304, 440)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree5" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(400, 472)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree6" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(496, 440)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree7" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(608, 456)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree8" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(704, 432)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree9" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(800, 464)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree10" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(896, 480)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree11" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(992, 424)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree12" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1088, 472)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree13" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1184, 432)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree14" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1280, 448)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree15" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1376, 464)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree16" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1472, 432)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="Tree17" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1568, 480)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree18" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1664, 400)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree19" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1776, 472)
+scale = Vector2(0.4, 0.4)
+frame = 1
+
+[node name="Tree20" parent="BackgroundTrees4" instance=ExtResource("1_uaysb")]
+position = Vector2(1872, 432)
+scale = Vector2(0.4, 0.4)
+frame = 2
+
+[node name="BackgroundTrees5" type="CanvasGroup" parent="."]
+
+[node name="Tree2" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(152, 447)
+scale = Vector2(0.4, 0.4)
+frame = 3
+
+[node name="Tree" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(56, 521)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree4" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(344, 464)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree3" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(248, 488)
+scale = Vector2(0.4, 0.4)
+frame = 5
+
+[node name="Tree6" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(536, 472)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree5" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(440, 520)
+scale = Vector2(0.4, 0.4)
+frame = 3
+
+[node name="Tree8" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(744, 456)
+scale = Vector2(0.4, 0.4)
+frame = 5
+
+[node name="Tree7" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(648, 496)
+scale = Vector2(0.4, 0.4)
+frame = 6
+
+[node name="Tree9" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(840, 504)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree11" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1032, 456)
+scale = Vector2(0.4, 0.4)
+frame = 3
+
+[node name="Tree10" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(936, 544)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree13" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1224, 472)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree12" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1128, 496)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree14" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1320, 472)
+scale = Vector2(0.4, 0.4)
+frame = 5
+
+[node name="Tree16" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1512, 464)
+scale = Vector2(0.4, 0.4)
+frame = 3
+
+[node name="Tree15" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1416, 504)
+scale = Vector2(0.4, 0.4)
+
+[node name="Tree18" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1704, 472)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree17" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1608, 536)
+scale = Vector2(0.4, 0.4)
+frame = 4
+
+[node name="Tree20" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1912, 456)
+scale = Vector2(0.4, 0.4)
+frame = 7
+
+[node name="Tree19" parent="BackgroundTrees5" instance=ExtResource("1_uaysb")]
+position = Vector2(1816, 504)
+scale = Vector2(0.4, 0.4)
+frame = 5
